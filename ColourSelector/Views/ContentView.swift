@@ -78,7 +78,9 @@ struct ContentView: View {
                 
             }
             
-            Spacer()
+            List(savedPalettes) { palette in
+                MonochromaticPaletteView(hue: palette.hue, showTitle: false)
+            }
         }
         .padding()
     }
