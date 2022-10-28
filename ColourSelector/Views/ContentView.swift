@@ -26,22 +26,16 @@ struct ContentView: View {
                      brightness: 0.9)
     }
 
-    private var darkerColour: Color {
-        return Color(hue: hue,
-                     saturation: 0.8,
-                     brightness: 0.6)
-    }
-
-    private var evenDarkerColour: Color {
-        return Color(hue: hue,
-                     saturation: 0.8,
-                     brightness: 0.3)
-    }
+ 
+   
 
     // Interface
     var body: some View {
+        
+        
         VStack(spacing: 20) {
             
+            //Selecting the hue
             HStack{
                 
                 ColourSwatchView(colour: baseColour,
@@ -64,28 +58,8 @@ struct ContentView: View {
                 
             }
             
-            VStack(alignment: .leading){
-                
-                Text("Monochromatic")
-                    .font(.caption.smallCaps())
-                    .bold()
-                
-                HStack(spacing: 0) {
-                    
-                    ColourSwatchView(colour: baseColour,
-                                     size: 50)
-
-                    ColourSwatchView(colour: darkerColour,
-                                     size: 50)
-                    
-                    ColourSwatchView(colour: evenDarkerColour,
-                                     size: 50)
-                    
-                    
-                    Spacer()
-            }
-
-            }
+            //Monochromatic Palette
+            MonochromaticPaletteView(hue: hue)
             
             Spacer()
         }

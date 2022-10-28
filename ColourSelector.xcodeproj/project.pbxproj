@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1908587C290C59470069E4AF /* MonochromaticPaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1908587B290C59470069E4AF /* MonochromaticPaletteView.swift */; };
 		8107773D290B082900E67DD4 /* ColourSelectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107773C290B082900E67DD4 /* ColourSelectorApp.swift */; };
 		8107773F290B082900E67DD4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107773E290B082900E67DD4 /* ContentView.swift */; };
 		81077741290B082A00E67DD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81077740290B082A00E67DD4 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1908587B290C59470069E4AF /* MonochromaticPaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonochromaticPaletteView.swift; sourceTree = "<group>"; };
 		81077739290B082900E67DD4 /* ColourSelector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColourSelector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8107773C290B082900E67DD4 /* ColourSelectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourSelectorApp.swift; sourceTree = "<group>"; };
 		8107773E290B082900E67DD4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				8107774C290B123200E67DD4 /* ColourSwatchView.swift */,
+				1908587B290C59470069E4AF /* MonochromaticPaletteView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			files = (
 				8107773F290B082900E67DD4 /* ContentView.swift in Sources */,
 				8107773D290B082900E67DD4 /* ColourSelectorApp.swift in Sources */,
+				1908587C290C59470069E4AF /* MonochromaticPaletteView.swift in Sources */,
 				8107774D290B123200E67DD4 /* ColourSwatchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
