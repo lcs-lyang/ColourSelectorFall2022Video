@@ -59,41 +59,25 @@ struct SavedPalettesView: View {
                 
             }
             
-            //Monochromatic Palette
+            //Showing the reset button
             
             HStack{
-                
-                MonochromaticPaletteView(hue: hue)
-                
                 Spacer()
-                
                 Button(action: {
-                    //Save the current palette
-                    savePalette()
-                    
+                    selectedHue = 0.0
+                    print("Resetting")
                 }, label: {
-                    Text("Save")
-                        .font(.subheadline.smallCaps())
+                    Text("Reset")
                 })
-                .buttonStyle(.bordered)
-                
             }
             
-            List(savedPalettes) { palette in
+            List(filtered(by: hue, from: savedPalettes)) { palette in
                 MonochromaticPaletteView(hue: palette.hue, showTitle: false)
             }
         }
         .padding()
     }
     
-    //MARK: Functions (actions, logic, things that happen...)
-    
-    func savePalette() {
-        
-        let newPalette = SavedPalette(hue: hue)
-        savedPalettes.append(newPalette)
-        print(savedPalettes)
-    }
     
 }
 
